@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.15",
-    "lunr": "^2.3.8",
+    "lunr": "^2.3.9",
     "p5": "^0.10.2",
     "parser-front-matter": "^1.6.4"
   },
