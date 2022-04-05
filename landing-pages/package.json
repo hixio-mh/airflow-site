@@ -22,13 +22,16 @@
     "preview:webpack": "npm run start:webpack",
     "start": "run-p start:**",
     "start:hugo": "hugo -d ../dist -s site -vw",
-    "start:webpack": "webpack-dev-server --config webpack.dev.js --hot"
+    "start:webpack": "webpack-dev-server --config webpack.dev.js --hot",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.20",
     "lunr": "^2.3.8",
     "p5": "^0.10.2",
-    "parser-front-matter": "^1.6.4"
+    "parser-front-matter": "^1.6.4",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",
@@ -86,5 +89,6 @@
       "at-rule-no-unknown": null,
       "scss/at-rule-no-unknown": true
     }
-  }
+  },
+  "snyk": true
 }
